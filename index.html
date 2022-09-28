@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/images/icons/gea.ico" sizes="32x32" type="image/x-icon">
+    <title>GEA Arquitectura</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <section class="main__hero">
+            <nav class="main__nav container">
+                <div class="slide container">
+                <div class="mySlider fade">
+                    <img src="images/desktop-image-hero-1.png" alt="image1">
+                </div>
+                <div class="mySlider fade">
+                    <img src="images/desktop-image-hero-2.jpg" alt="image2">
+                </div>
+                <div class="mySlider fade">
+                    <img src="images/desktop-image-hero-3.png" alt="image3">
+                </div>
+                <div class="bars">
+                    <span class="bar active" onclick="positionSlider(1)"></span>
+                    <span class="bar" onclick="positionSlider(2)"></span>
+                    <span class="bar" onclick="positionSlider(3)"></span>
+                </div>
+                <div class="main__controls">
+                    <a href="#" class="preview" onclick="fade(-1)"><img src="images/icons/left.svg" class="main__control"></a>
+                    <a href="#" class="next" onclick="fade(1)"><img src="images/icons/right.svg" class="main__control"></a>
+                </div>
+                <img src="images/icons/menu.svg" class="main__menu">
+                <img src="images/logos/gea.png" alt="logo_gea" class="main__logo">
+                <ul class="main__links">
+                    <li class="main__list"><a href="#" class="main__link">Inicio</a></li>
+                    <li class="main__list"><a href="#" class="main__link">Servicios</a></li>
+                    <li class="main__list"><a href="#" class="main__link">Obras</a></li>
+                    <li class="main__list"><a href="#" class="main__link">Sobre nosotros</a></li>
+                    <li class="main__list"><a href="#" class="main__link">Contacto</a></li>
+                </ul>
+                </div>
+            </nav>
+        </section>
+
+        <section class="main__services container">
+            <div class="main__service">
+                <img src="images/icons/conversation.svg" alt="conversation">
+                <h4 class="service__title">Ideamos</h4>
+                <p class="main__paragraph">Escuchamos tus ideas y te brindamos asesoramiento acorde para que puedas considerar 
+                    las variantes en diversos modelos constructivos, posibles tiempos y costos.</p>
+            </div>
+            <div class="main__service">
+                <img src="images/icons/house.svg" alt="house">
+                <h4 class="service__title">Proyectamos</h4>
+                <p class="main__paragraph">Le damos forma a tus ideas y las transformamos en un proyecto constructivo, 
+                    para que puedas ver un resultado simulado en alta calidad.</p>
+            </div>
+            <div class="main__service">
+                <img src="images/icons/calculator.svg" alt="calcu">
+                <h4 class="service__title">Presupuestamos</h4>
+                <p class="main__paragraph">Realizamos una propuesta económica clara, que cubra todas las necesidades de tu proyecto.</p>
+            </div>
+            <div class="main__service">
+                <img src="images/icons/work.svg" alt="work">
+                <h4 class="service__title">Construimos</h4>
+                <p class="main__paragraph">Llevamos a cabo el proyecto siguiendo tu decisión y de acuerdo con todos los requerimientos
+                    específicos de la jurisdicción en la que se ejecute.</p>
+            </div>
+            <div class="main__service">
+                <img src="images/icons/key.svg" alt="key">
+                <h4 class="service__title">Entregamos</h4>
+                <p class="main__paragraph">Te ofrecemos un modelo de construcción integral "llave en mano", 
+                    mediante el cual nos encargamos de entregar tu casa, oficina o local, con todas las terminaciones y servicios instalados.
+                También podés optar por "obra gris". Es tu elección.</p>
+            </div>
+        </section>
+
+        <section class="main__works container">
+            <div class="main__work">
+                <img src="images/galery/image1.jpeg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>     
+            </div>
+            <div class="main__work">
+                <img class="work__image" src="images/galery/image2.png" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>    
+            </div>
+            <div class="main__work">
+                <img class="work__image" src="images/galery/image3.jpeg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+            <div class="main__work">
+                <img class="work__image" src="images/galery/image4.jpg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+            <div class="main__work">
+                <img class="work__image" src="images/galery/image5.jpeg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+            <div class="main__work">
+                <img class="work__image" src="images/galery/image6.jpeg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__abouts container">
+            <div class="main__about">
+                <h2 class="about__title">Ayelén Giles</h2>
+                <h3 class="about__title">Arquitecta</h3>
+                <img class="about__image" src="images/ayelen-gea.png" alt="aye-gea">  
+            </div>
+        </section>
+
+        <section class="main__contact container">
+            
+        </section>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
+</body>
+</html>
