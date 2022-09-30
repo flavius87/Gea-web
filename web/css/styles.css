@@ -409,14 +409,26 @@ button {
 .footer {
     grid-area: footer;
     width: 100%;
+    min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--gray);
 }
 
+.footer__social {
+    margin: 12px;
+}
+
+.footer__social__icons {
+    margin-top: 5px;
+}
+
 .footer__text {
+    margin-top: 20px;
     color: var(--white);
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .footer__text a {
@@ -429,6 +441,22 @@ button {
     cursor: pointer;
     transition: .3s ease;
     text-decoration: underline;
+}
+
+.footer__social__title {
+    color: var(--white);
+    font-weight: 300;
+}
+
+.footer__location {
+    margin: 20px 0px;
+}
+
+.footer__location p{
+    color: var(--white);
+    font-weight: 300;
+    margin-top: 5px;
+    font-size: 14px;
 }
 
 @media (min-width:768px){
