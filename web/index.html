@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEA Arquitectura</title>
+    <link rel="shortcut icon" href="/web/assets/icons/gea.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -13,7 +14,7 @@
     <main class="main">
         <header>
             <section class="main__hero">
-                <nav class="main__nav container">
+                <nav class="main__nav container" id="myNav">
                     <img src="assets/icons/menu.svg" class="main__hamburguer">
                     <img src="assets/logos/gea.png" alt="logo_gea" class="main__logo">
                     <ul class="main__links">
@@ -194,6 +195,13 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
+
+    <!----- Whatsapp ----->
+    <div class="whatsapp container">
+        <a href="https://api.whatsapp.com/send?phone=5492214591846&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n" class="float" target="_blank">
+            <img src="/web/assets/icons/whatsapp.svg" alt="whatsapp">
+        </a>
+    </div>
     <footer>
         <section class="footer container">
             <div class="footer__social">
@@ -218,7 +226,8 @@
             </div>
         </section>
     </footer>
-    <script src="/web/slide.js"></script>
+    <script src="/web/js/slide.js"></script>
+    <script src="/web/js/sticky.js"></script>
 </body>
 
 </html>
