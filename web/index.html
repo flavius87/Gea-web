@@ -12,220 +12,279 @@
 
 <body>
     <main class="main">
-        <header>
-            <section class="main__hero">
-                <nav class="main__nav container" id="myNav">
-                    <img src="assets/icons/menu.svg" class="main__hamburguer">
-                    <img src="assets/logos/gea.png" alt="logo_gea" class="main__logo">
-                    <ul class="main__links">
-                        <li class="main__list"><a href="#" class="main__link">Inicio</a></li>
-                        <li class="main__list"><a href="#" class="main__link">Servicios</a></li>
-                        <li class="main__list"><a href="#" class="main__link">Obras</a></li>
-                        <li class="main__list"><a href="#" class="main__link">Sobre nosotros</a></li>
-                        <li class="main__list"><a href="#" class="main__link">Contacto</a></li>
-                    </ul>
-                </nav>
-                <div class="slide">
-                    <div class="mySlider fade">
-                        <img src="assets/images/desktop-image-hero-1.png" alt="image1">
-                    </div>
-                    <div class="mySlider fade">
-                        <img src="assets/images/desktop-image-hero-2.png" alt="image2">
-                    </div>
-                    <div class="mySlider fade">
-                        <img src="assets/images/desktop-image-hero-3.png" alt="image3">
-                    </div>
-                    <div class="bars">
-                        <span class="bar active" onclick="positionSlider(1)"></span>
-                        <span class="bar" onclick="positionSlider(2)"></span>
-                        <span class="bar" onclick="positionSlider(3)"></span>
-                    </div>
-                    <div class="main__controls">
-                        <a href="#" class="preview" onclick="fade(-1)"><img src="assets/icons/left.svg"
-                                class="main__control"></a>
-                        <a href="#" class="next" onclick="fade(1)"><img src="assets/icons/right.svg"
-                                class="main__control"></a>
-                    </div>
-                </div>
-            </section>
+        <header class="main__hero">
+            <nav class="main__nav container" id="myNav">
+                <img src="assets/logos/gea.png" alt="logo_gea" class="main__logo">
+                <ul class="main__links">
+                    <li class="main__list"><a href="#" class="main__link">Inicio</a></li>
+                    <li class="main__list"><a href="#services" class="main__link">Servicios</a></li>
+                    <li class="main__list"><a href="#works" class="main__link">Obras</a></li>
+                    <li class="main__list"><a href="#abouts" class="main__link">Sobre nosotros</a></li>
+                    <li class="main__list"><a href="#contact" class="main__link">Contacto</a></li>
+                </ul>
+                <a href="#myNav" class="nav__hamburguer"><img src="assets/icons/menu.svg" class="nav__icon">
+                </a>
+                <a href="#" class="nav__close"><img src="/web/assets/icons/close.svg" class="nav__icon" alt="close">
+                </a>
+            </nav>
         </header>
-    </main>
-    <section class="services container">
-        <div class="service">
-            <div class="service__img">
-                <img src="assets/icons/conversation.svg" alt="conversation">
+        <section class="slide">
+            <div class="mySlider fade">
+                <img src="assets/images/desktop-image-hero-1.png" alt="image1">
             </div>
-            <h4 class="service__title">Ideamos</h4>
-            <p class="service__paragraph">Escuchamos tus ideas y te brindamos asesoramiento acorde para que puedas
-                considerar
-                las variantes en diversos modelos constructivos, posibles tiempos y costos.</p>
-        </div>
-        <div class="service">
-            <div class="service__img fade">
-                <img src="assets/icons/house.svg" alt="house">
+            <div class="mySlider fade">
+                <img src="assets/images/desktop-image-hero-2.png" alt="image2">
             </div>
-            <h4 class="service__title">Proyectamos</h4>
-            <p class="service__paragraph">Le damos forma a tus ideas y las transformamos en un proyecto constructivo,
-                para que puedas ver un resultado simulado en alta calidad.</p>
-        </div>
-        <div class="service">
-            <div class="service__img fade" >
-                <img src="assets/icons/calculator.svg" alt="calcu">
+            <div class="mySlider fade">
+                <img src="assets/images/desktop-image-hero-3.png" alt="image3">
             </div>
-            <h4 class="service__title">Presupuestamos</h4>
-            <p class="service__paragraph">Realizamos una propuesta económica clara, que cubra todas las necesidades de
-                tu proyecto.</p>
-        </div>
-        <div class="service">
-            <div class="service__img">
-                <img src="assets/icons/work.svg" alt="work">
+            <div class="bars">
+                <span class="bar active" onclick="positionSlider(1)"></span>
+                <span class="bar" onclick="positionSlider(2)"></span>
+                <span class="bar" onclick="positionSlider(3)"></span>
             </div>
-            <h4 class="service__title">Construimos</h4>
-            <p class="service__paragraph">Llevamos a cabo el proyecto siguiendo tu decisión y de acuerdo con todos los
-                requerimientos
-                específicos de la jurisdicción en la que se ejecute.</p>
-        </div>
-        <div class="service">
-            <div class="service__img">
-            <img src="assets/icons/key.svg" alt="key">
-            </div>
-            <h4 class="service__title">Entregamos</h4>
-            <p class="service__paragraph">Te ofrecemos un modelo de construcción integral "llave en mano",
-                mediante el cual nos encargamos de entregar tu casa, oficina o local, con todas las terminaciones y
-                servicios instalados.
-                También podés optar por "obra gris". Es tu elección.</p>
-        </div>
-    </section>
-
-    <section class="works container">
-        <div class="work__galery">
-            <img src="assets/images/galery/image1.jpeg" alt="galery">
-            <div class="work__overlay">
-                <h4 class="work__title">Ideamos</h4>
-            </div>
-        </div>
-        <div class="work__galery">
-            <img src="assets/images/galery/image2.png" alt="galery">
-            <div class="work__overlay">
-                <h4 class="work__title">Ideamos</h4>
-            </div>
-        </div>
-        <div class="work__galery">
-            <img src="assets/images/galery/image3.jpeg" alt="galery">
-            <div class="work__overlay">
-                <h4 class="work__title">Ideamos</h4>
-            </div>
-        </div>
-        <div class="work__galery">
-            <img src="assets/images/galery/image4.jpg" alt="galery">
-            <div class="work__overlay">
-                <h4 class="work__title">Ideamos</h4>
-            </div>
-        </div>
-        <div class="work__galery">
-            <img src="assets/images/galery/image5.jpeg" alt="galery">
-            <div class="work__overlay">
-                <h4 class="work__title">Ideamos</h4>
-            </div>
-        </div>
-        <div class="work__galery">
-            <img src="assets/images/galery/image6.jpeg" alt="galery">
-            <div class="work__overlay">
-                <h4 class="work__title">Ideamos</h4>
-            </div>
-        </div>
-    </section>
-
-    <section class="abouts">
-        <div class="about">
-            <!--<div class="card__wave"><img src="assets/waves/wave-card.svg"></div>
-            <div class="card__wave__2"><img src="assets/waves/wave-card-2.svg"></div>-->
-            <div class="about__card">
-                <img src="assets/images/ayelen-gea.jpg" alt="aye-gea">
-            </div>
-            
-            <h2 class="about__title">Ayelén Giles</h2>
-            <h3 class="about__subtitle">Arquitecta</h3>
-            <div class="about__paragraph container">
-                <p>Somos <span>GEA Arquitectura</span>, un estudio creado por la arquitecta Ayelén Giles, ubicado en la localidad de City Bell (La Plata).
-                    Un entorno de gran desarrollo inmobiliario, donde conviven las últimas tendencias en construcción. 
-                    Muy adecuado para mantener activa la inspiración.</p>
-                                
-                <p>En GEA llevamos a cabo <span>proyectos a medida en todo el Gran La Plata, sus ciudades aledañas y en La Costa</span>. 
-                    Tenemos obras en construcción en varias localidades, incluyendo Sicardi, La Plata, Abasto, Villa Elisa, 
-                    el barrio Prados de la Vega y Ostende, entre otras.</p>
-
-                <p>Desde el 2017 trabajamos con la premisa de brindar un servicio integral para resolver todas las necesidades de los proyectos, 
-                    garantizando transparencia y compromiso. <span>Construimos en sistema húmedo (tradicional), steel frame y wood frame.</span></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact container">
-        <form action="action">
-            <h1 class="contact__title">Dejanos tu consulta</h1>
-            <div class="contact__form">
-                <input type="text" name="name" id="" required><span class="float__bar"></span>
-                <label>Nombre</label>
-            </div>
-            <div class="contact__form">
-                <input type="text" name="lastName" id="" required><span class="float__bar"></span>
-                <label>Apellido</label>
-            </div>
-            <div class="contact__form">
-                <input type="email" name="email" id="" required><span class="float__bar"></span>
-                <label>Email</label>
-            </div>
-            <div class="contact__form">
-                <input type="number" name="phone" id="" required><span class="float__bar"></span>
-                <label>Celular</label>
-            </div>
-            <div class="contact__form">
-                <input type="text" name="city" id="" required><span class="float__bar"></span>
-                <label>Tu ciudad</label>
-            </div>
-            <div class="contact__form">
-                <input type="text" name="subject" id="" required><span class="float__bar"></span>
-                <label>Asunto</label>
-            </div>
-            <div class="contact__form">
-                <textarea name="message" id="" rows="3" required></textarea><span class="float__bar"></span>
-                <label>Mensaje</label>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <!----- Whatsapp ----->
-    <div class="whatsapp container">
-        <a href="https://api.whatsapp.com/send?phone=5492214591846&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n" class="float" target="_blank">
-            <img src="/web/assets/icons/whatsapp.svg" alt="whatsapp">
-        </a>
-    </div>
-    <footer>
-        <section class="footer container">
-            <div class="footer__social">
-                <div class="footer__location">
-                    <h3 class="footer__social__title">Dirección de nuestro estudio:</h3>
-                    <p><img src="/web/assets/icons/maps.svg" alt="map">City Bell, Calle 476 esq. 19 cod. Nº 1896</p>
-                </div>
-                <h3 class="footer__social__title">Nuestras redes:</h3>
-                <div id="iconos" class="footer__social__icons">
-                    <a href="https://www.facebook.com/estudiogeaarq/" target="_blank">
-                        <img src="/web/assets/icons/facebook-square.svg" alt="facebook"></a>
-                    <a href="https://www.instagram.com/gea_arquitectura/" target="_blank">
-                        <img src="/web/assets/icons/instagram-square.svg" alt="instagram"></a>
-                    <a href="https://api.whatsapp.com/send?phone=5492214591846&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20para%20construir"
-                    target="_blank"><img src="/web/assets/icons/whatsapp.svg" alt="whatsapp"></a>
-                    <a href="https://www.linkedin.com/company/gea-arquitectura/" target="_blank">
-                        <img src="/web/assets/icons/linkedin-square.svg" alt="linkedin"></a>
-                    <a href="mailto:estudiogea.lp@gmail.com?Subject=Me%interesa%saber%más%para%construir">
-                        <img src="/web/assets/icons/gmail-square.svg" alt="gmail"></a>
-                </div>
-                <p class="footer__text">&copy; GEA - 2022 | Desarrollado por <a href="https://github.com/flavius87" target="_blank">flavius</a></p>
+            <div class="main__controls">
+                <a href="#" class="preview" onclick="fade(-1)"><img src="assets/icons/left.svg"
+                        class="main__control"></a>
+                <a href="#" class="next" onclick="fade(1)"><img src="assets/icons/right.svg" class="main__control"></a>
             </div>
         </section>
-    </footer>
+        <section class="services container" id="services">
+            <div class="service">
+                <figure class="service__img">
+                    <img src="assets/icons/conversation.svg" alt="conversation">
+                </figure>
+                <h4 class="service__title">Ideamos</h4>
+                <p class="service__paragraph">Escuchamos tus ideas y te brindamos asesoramiento acorde para que puedas
+                    considerar
+                    las variantes en diversos modelos constructivos, posibles tiempos y costos.</p>
+            </div>
+            <div class="service">
+                <figure class="service__img">
+                    <img src="assets/icons/house.svg" alt="house">
+                </figure>
+                <h4 class="service__title">Proyectamos</h4>
+                <p class="service__paragraph">Le damos forma a tus ideas y las transformamos en un proyecto
+                    constructivo,
+                    para que puedas ver un resultado simulado en alta calidad.</p>
+            </div>
+            <div class="service">
+                <figure class="service__img">
+                    <img src="assets/icons/calculator.svg" alt="calcu">
+                </figure>
+                <h4 class="service__title">Presupuestamos</h4>
+                <p class="service__paragraph">Realizamos una propuesta económica clara, que cubra todas las necesidades
+                    de
+                    tu proyecto.</p>
+            </div>
+            <div class="service">
+                <figure class="service__img">
+                    <img src="assets/icons/work.svg" alt="work">
+                </figure>
+                <h4 class="service__title">Construimos</h4>
+                <p class="service__paragraph">Llevamos a cabo el proyecto siguiendo tu decisión y de acuerdo con todos
+                    los
+                    requerimientos
+                    específicos de la jurisdicción en la que se ejecute.</p>
+            </div>
+            <div class="service">
+                <figure class="service__img">
+                    <img src="assets/icons/key.svg" alt="key">
+                </figure>
+                <h4 class="service__title">Entregamos</h4>
+                <p class="service__paragraph">Te ofrecemos un modelo de construcción integral "llave en mano",
+                    mediante el cual nos encargamos de entregar tu casa, oficina o local, con todas las terminaciones y
+                    servicios instalados.
+                    También podés optar por "obra gris". Es tu elección.</p>
+            </div>
+        </section>
+
+        <section class="works container" id="works">
+            <div class="work__galery">
+                <img src="assets/images/galery/image1.jpeg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+            <div class="work__galery">
+                <img src="assets/images/galery/image2.png" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+            <div class="work__galery">
+                <img src="assets/images/galery/image3.jpeg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+            <div class="work__galery">
+                <img src="assets/images/galery/image4.jpg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+            <div class="work__galery">
+                <img src="assets/images/galery/image5.jpeg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+            <div class="work__galery">
+                <img src="assets/images/galery/image6.jpeg" alt="galery">
+                <div class="work__overlay">
+                    <h4 class="work__title">Ideamos</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="abouts" id="abouts">
+            <div class="about">
+                <!--<div class="card__wave"><img src="assets/waves/wave-card.svg"></div>
+            <div class="card__wave__2"><img src="assets/waves/wave-card-2.svg"></div>-->
+                <div class="about__card">
+                    <img src="assets/images/ayelen-gea.jpg" alt="aye-gea">
+                </div>
+
+                <h2 class="about__title">Ayelén Giles</h2>
+                <h3 class="about__subtitle">Arquitecta</h3>
+                <div class="about__paragraph container">
+                    <p>Somos <span>GEA Arquitectura</span>, un estudio creado por la arquitecta Ayelén Giles, ubicado en
+                        la localidad de City Bell (La Plata).
+                        Un entorno de gran desarrollo inmobiliario, donde conviven las últimas tendencias en
+                        construcción.
+                        Muy adecuado para mantener activa la inspiración.</p>
+
+                    <p>En GEA llevamos a cabo <span>proyectos a medida en todo el Gran La Plata, sus ciudades aledañas y
+                            en La Costa</span>.
+                        Tenemos obras en construcción en varias localidades, incluyendo Sicardi, La Plata, Abasto, Villa
+                        Elisa,
+                        el barrio Prados de la Vega y Ostende, entre otras.</p>
+
+                    <p>Desde el 2017 trabajamos con la premisa de brindar un servicio integral para resolver todas las
+                        necesidades de los proyectos,
+                        garantizando transparencia y compromiso. <span>Construimos en sistema húmedo (tradicional),
+                            steel frame y wood frame.</span></p>
+
+                    <p>Realizamos viviendas familiares, casas o departamentos de alquiler, garajes, quinchos, decks,
+                        oficinas, piscinas,
+                        llevamos a cabo reformas, ampliaciones en general y proyectos paisajísticos.</p>
+                </div>
+            </div>
+            <div class="about__credit">
+                <div class="about__img__credit">
+
+                    <h2 class="about__subtitle" style="padding-top: 10px; color: white">Créditos Línea Procrear</h2>
+                    <div class="about__paragraph container" style="color: white">
+                        <p>
+                            ¿Sos beneficiario de la línea de créditos Procrear? ¿Querés construir o reformar tu casa?
+                            Escribinos y <span>te ayudamos a hacer que el crédito para tu casa propia rinda más</span>.
+                            Realizamos diseños a tu medida. <span>Proyectos personalizados</span>.
+                        </p>
+
+                    </div>
+                    <div class="procrear">
+                        <img src="/web/assets/logos/procrearLogo.png" alt="Procrear">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact container" id="contact">
+            <form action="action">
+                <h1 class="contact__title">Dejanos tu consulta</h1>
+                <div class="contact__form">
+                    <input type="text" name="name" id="" required><span class="float__bar"></span>
+                    <label>Nombre</label>
+                </div>
+                <div class="contact__form">
+                    <input type="text" name="lastName" id="" required><span class="float__bar"></span>
+                    <label>Apellido</label>
+                </div>
+                <div class="contact__form">
+                    <input type="email" name="email" id="" required><span class="float__bar"></span>
+                    <label>Email</label>
+                </div>
+                <div class="contact__form">
+                    <input type="number" name="phone" id="" required><span class="float__bar"></span>
+                    <label>Celular</label>
+                </div>
+                <div class="contact__form">
+                    <input type="text" name="city" id="" required><span class="float__bar"></span>
+                    <label>Tu ciudad</label>
+                </div>
+                <div class="contact__form">
+                    <input type="text" name="subject" id="" required><span class="float__bar"></span>
+                    <label>Asunto</label>
+                </div>
+                <div class="contact__form">
+                    <textarea name="message" id="" rows="3" required></textarea><span class="float__bar"></span>
+                    <label>Mensaje</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="logos container">
+            <h2 class="logos__title">Acompañan nuestros proyectos:</h2>
+            <div class="logos__img">
+                <div class="logo move">
+                    <a href="http://www.mussispropiedades.com.ar/" target="_blank">
+                        <img src="/web/assets/logos/mussisLogo.png" alt="mussisLogo">
+                    </a>
+                </div>
+                <div class="logo move">
+                    <a href="https://miksa.com.ar/" target="_blank">
+                        <img src="/web/assets/logos/miksaLogo.png" alt="miksaLogo">
+                    </a>
+                </div>
+                <div class="logo move">
+                    <a href="https://molber-steelframe.com/" target="_blank">
+                        <img src="/web/assets/logos/molberLogo.png" alt="molberLogo">
+                    </a>
+                </div>
+                <div class="logo move">
+                    <a href="https://www.facebook.com/materialesberisso/" target="_blank">
+                        <img src="/web/assets/logos/mbLogo.png" alt="mbLogo">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!----- Whatsapp ----->
+        <div class="whatsapp container">
+            <a href="https://api.whatsapp.com/send?phone=5492214591846&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n"
+                class="float" target="_blank">
+                <img src="/web/assets/icons/whatsapp.svg" alt="whatsapp">
+            </a>
+        </div>
+        <footer>
+            <section class="footer container">
+                <div class="footer__social">
+                    <div class="footer__location">
+                        <h3 class="footer__social__title">Dirección de nuestro estudio:</h3>
+                        <p><img src="/web/assets/icons/maps.svg" alt="map">City Bell, Calle 476 esq. 19 cod. Nº 1896</p>
+                    </div>
+                    <h3 class="footer__social__title">Nuestras redes:</h3>
+                    <div id="iconos" class="footer__social__icons">
+                        <a href="https://www.facebook.com/estudiogeaarq/" target="_blank">
+                            <img src="/web/assets/icons/facebook-square.svg" alt="facebook"></a>
+                        <a href="https://www.instagram.com/gea_arquitectura/" target="_blank">
+                            <img src="/web/assets/icons/instagram-square.svg" alt="instagram"></a>
+                        <a href="https://api.whatsapp.com/send?phone=5492214591846&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20para%20construir"
+                            target="_blank"><img src="/web/assets/icons/whatsapp.svg" alt="whatsapp"></a>
+                        <a href="https://www.linkedin.com/company/gea-arquitectura/" target="_blank">
+                            <img src="/web/assets/icons/linkedin-square.svg" alt="linkedin"></a>
+                        <a href="mailto:estudiogea.lp@gmail.com?Subject=Me%interesa%saber%más%para%construir">
+                            <img src="/web/assets/icons/gmail-square.svg" alt="gmail"></a>
+                    </div>
+                    <p class="footer__text">&copy; GEA - 2022 | Desarrollado por <a href="https://github.com/flavius87"
+                            target="_blank">flavius</a></p>
+                </div>
+            </section>
+        </footer>
+    </main>
     <script src="/web/js/slide.js"></script>
     <script src="/web/js/sticky.js"></script>
 </body>
