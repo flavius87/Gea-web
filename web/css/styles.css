@@ -125,6 +125,14 @@ body{
     font-size: 1.2rem;
 }
 
+.social__icons {
+    margin-top: auto;
+}
+
+.social__icons img:hover{
+    background-color: var(--water-green-tr);
+}
+
 
 /* sticky */
 
@@ -212,7 +220,7 @@ body{
     grid-area: services;
     width: 100%;
     background-color: var(--water-green);
-    min-height: 100vh;
+    height: auto;
 }
 
 .service {
@@ -259,6 +267,7 @@ body{
 
 .works{
     grid-area: works;
+    width: 95%;
     display:grid;
     justify-content: space-around;
     border-radius:3px;
@@ -267,7 +276,7 @@ body{
 .works .work__galery{
     position: relative;
     width: 100%;
-    height:250px;
+    min-height: 250px;
     margin-bottom:5px;
     box-shadow: var(--gray-tr);
 }
@@ -408,12 +417,12 @@ body{
 
 .contact {
     grid-area: contact;
+    background: var(--green-gradient);
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--green-gradient);
 }
 
 form {
@@ -562,8 +571,8 @@ button {
     width: 100%;
     min-height: 20vh;
     display: grid;
-    justify-content: center;
-    align-items: center;
+    place-content: center;
+    margin: auto;
     background: var(--gray);
 }
 
@@ -573,6 +582,10 @@ button {
 
 .footer__social__icons {
     margin-top: 5px;
+}
+
+.footer__social__icons img:hover {
+    background-color: var(--water-green-tr);
 }
 
 .footer__text {
@@ -605,10 +618,16 @@ button {
 
 .footer__location p{
     color: var(--white);
-    font-weight: 300;
     margin-top: 5px;
+    font-weight: 300;
     font-size: 14px;
 }
+
+.icon__location {
+    position: absolute;
+    transform: translateX(-30px);
+} 
+
 
 /* Whatsapp */
 
@@ -642,7 +661,6 @@ button {
     height: 32px;
 }
 
-
 @media (min-width:768px){
 
 .container{
@@ -650,19 +668,6 @@ button {
     margin: 0 auto;
     padding: 8px 0;
 }
-
-.main{
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-areas: 
-        "header header header header header"
-        "slide slide slide slide slide"
-        "services services services services services"
-        "works works works works works"
-        "abouts abouts abouts contact contact"
-        "logos logos logos logos logos"
-        "footer footer footer footer footer";
-    }
-
 
 .main__nav{
     --state-hamburguer:scale(0);
@@ -703,33 +708,33 @@ button {
     padding-left: 20%;
 }
 
+.social__icons {
+    margin-top: 0px;
+}
 
 /* Services */
 
 .services {
-    grid-area: services;
     width: 100%;
-    background-color: var(--water-green);
-    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .service {
-    justify-content: center;
-}
-
-.service__img {
-    margin: 15px 0px;
-    display: flex;
-    justify-content: center;
+    float: left;
+    width: 20em;
+    height: 17em;
+    margin: 3px;
+    padding: 3px;
 }
 
 .service__img img {
     padding: 10px;
     background: var(--white);
-    width: 15%;
-    height: 15%;
+    width: 25%;
+    height: 25%;
     border-radius: 50%;
-    
 }
 
 .service__img img:hover {
@@ -752,6 +757,53 @@ button {
     text-align: center;
 }
 
+/* Galery works */
+
+.works{
+    width: 95%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1em;
+}
+
+/* Contact */
+
+.contact {
+    width: 100%;
+}
+
+form, .contact__title, button {
+    width: 80%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Footer */
+
+.footer, .footer__location, .footer__social {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;;
+}
+
+.footer__location p {
+    margin-left: 6px;
+    margin-top: 0px;
+}
+
+.icon__location {
+    position: absolute;
+    transform: translateX(240px);
+} 
+
+.footer__social__icons {
+    margin-left: 6px;
+}
 
 /* Whatsapp */
 
@@ -760,5 +812,55 @@ button {
 	right:40px;
 }
 
+.whatsapp img {
+    padding-bottom: 10px;
+    width: 45px;
+    height: 45px;
 }
 
+}
+
+@media (min-width: 1024px) {
+
+    /* Galery works */
+    
+    .works{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    /* Galery works */
+    
+    .works{
+        display:grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        grid-template-rows: 250px 280px 280px 300px;
+        gap: 1em;
+    }
+
+    /* Abouts */
+
+    /* Contact */
+
+   
+    
+
+}
+
+@media (min-width: 1366px) {
+
+    /* Galery works */
+    
+    .works{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px;
+        gap: 1em;
+    }
+}
+
+ 
