@@ -191,7 +191,7 @@
                 <!--<div class="card__wave"><img src="assets/waves/wave-card.svg"></div>
             <div class="card__wave__2"><img src="assets/waves/wave-card-2.svg"></div>-->
                 <div class="about__card">
-                    <img src="assets/images/ayelen-gea.jpg" alt="aye-gea">
+                    <img src="assets/images/ayelen-giles.png" alt="aye-gea">
                 </div>
 
                 <h2 class="about__title">Ayelén Giles</h2>
@@ -221,15 +221,15 @@
             </div>
             <div class="about__credit">
                 <div class="about__img__credit">
-
-                    <h2 class="about__subtitle" style="padding-top: 10px; color: white">Créditos Línea Procrear</h2>
+                    <h2 class="about__subtitle" style="padding-top: 10px">
+                        <a href="https://www.argentina.gob.ar/habitat/procrear" target="_blank">Créditos Línea Procrear</a>
+                    </h2>
                     <div class="about__paragraph container" style="color: white">
                         <p>
                             ¿Sos beneficiario de la línea de créditos Procrear? ¿Querés construir o reformar tu casa?
                             Escribinos y <span>te ayudamos a hacer que el crédito para tu casa propia rinda más</span>.
                             Realizamos diseños a tu medida. <span>Proyectos personalizados</span>.
                         </p>
-
                     </div>
                     <div class="procrear">
                         <img src="/web/assets/logos/procrearLogo.png" alt="Procrear">
@@ -240,34 +240,34 @@
         </section>
 
         <section class="contact container" id="contact">
-            <form action="action">
+            <form action="contact.php" method="post">
                 <h1 class="contact__title">Dejanos tu consulta</h1>
                 <div class="contact__form">
-                    <input type="text" name="name" id="" required><span class="float__bar"></span>
+                    <input type="text" name="name" id="name" pattern=[A-Z\sa-z]{3,20} required><span class="float__bar"></span>
                     <label>Nombre</label>
                 </div>
                 <div class="contact__form">
-                    <input type="text" name="lastName" id="" required><span class="float__bar"></span>
+                    <input type="text" name="lastName" id="lastName" pattern=[A-Z\sa-z]{3,20} required><span class="float__bar"></span>
                     <label>Apellido</label>
                 </div>
                 <div class="contact__form">
-                    <input type="email" name="email" id="" required><span class="float__bar"></span>
+                    <input type="email" name="email" id="email" required><span class="float__bar"></span>
                     <label>Email</label>
                 </div>
                 <div class="contact__form">
-                    <input type="number" name="phone" id="" required><span class="float__bar"></span>
+                    <input type="number" name="phone" id="cellphone" required><span class="float__bar"></span>
                     <label>Celular</label>
                 </div>
                 <div class="contact__form">
-                    <input type="text" name="city" id="" required><span class="float__bar"></span>
+                    <input type="text" name="city" id="city" required><span class="float__bar"></span>
                     <label>Tu ciudad</label>
                 </div>
                 <div class="contact__form">
-                    <input type="text" name="subject" id="" required><span class="float__bar"></span>
+                    <input type="text" name="subject" id="subject" required><span class="float__bar"></span>
                     <label>Asunto</label>
                 </div>
                 <div class="contact__form">
-                    <textarea name="message" id="" rows="3" required></textarea><span class="float__bar"></span>
+                    <textarea name="message" id="message" rows="3" cols="25" required></textarea><span class="float__bar"></span>
                     <label>Mensaje</label>
                 </div>
                 <button type="submit">Enviar</button>
@@ -311,14 +311,14 @@
             <section class="footer container">
                 <div class="footer__location">
                     <div class="icon__location">
-                        <img src="/web/assets/icons/maps.svg" alt="map">
+                        <a href="https://goo.gl/maps/d2BabPJxYzqGNsXZ8" target="_blank"><img src="/web/assets/icons/maps.svg" alt="map"></a>
                     </div>
                     <h3 class="footer__social__title">Dirección de nuestro estudio:</h3>
-                    <p>City Bell, Calle 476 esq. 19 cod. Nº 1896</p>
+                    <p>City Bell, Calle 476 esquina 19</p>
                 </div>
                 <div class="footer__social">
                     <h3 class="footer__social__title">Nuestras redes:</h3>
-                    <div id="iconos" class="footer__social__icons">
+                    <div id="icons" class="footer__social__icons">
                         <a href="https://www.facebook.com/estudiogeaarq/" target="_blank">
                             <img src="/web/assets/icons/facebook-square.svg" alt="facebook"></a>
                         <a href="https://www.instagram.com/gea_arquitectura/" target="_blank">

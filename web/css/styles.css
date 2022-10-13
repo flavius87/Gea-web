@@ -131,6 +131,9 @@ body{
 
 .social__icons img:hover{
     background-color: var(--water-green-tr);
+    transition: all 0.5s ease-out;
+    transform: scale(1.1, 1.1);
+    border-radius: 6px;
 }
 
 
@@ -328,7 +331,8 @@ body{
 }
 
 .about__card img {
-    width: 30%;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: 4px solid var(--white);
     object-fit: cover;
@@ -348,7 +352,7 @@ body{
 }*/
 
 .about__title {
-    padding-top: 20%;
+    padding-top: 25%;
     display: flex;
     justify-content: center;
     font-weight: 400;
@@ -412,6 +416,16 @@ body{
     transform: rotateX(90deg);
 }
 
+.about__img__credit .about__subtitle a {
+    text-decoration: none;
+    color: white;
+}
+
+.about__img__credit .about__subtitle:hover a {
+    color: var(--procrear);
+    transition: .3s ease;
+    text-decoration: underline;
+}
 
 /* Contact */
 
@@ -434,7 +448,7 @@ form {
 
 .contact__form {
     position: relative;
-    margin: 20px 23px;
+    margin: 15px 18px;
 }
 
 .contact__title {
@@ -472,8 +486,7 @@ label {
 
 input:focus~label, input:valid~label, 
 textarea:focus~label, textarea:valid~label{
-    position: absolute;
-    top: -14;
+    position: relative;
     font-size: 14px;
     color: var(--water-green);
 }
@@ -512,6 +525,12 @@ button {
     margin: 10px auto;
     font-size: 18px;
     cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+button:hover {
+    transition: all 0.5s ease-out;
+    transform: scale(1.1, 1.1);
 }
 
 /* Logos */
@@ -586,6 +605,9 @@ button {
 
 .footer__social__icons img:hover {
     background-color: var(--water-green-tr);
+    border-radius: 6px;
+    transition: all 0.5s ease-out;
+    transform: scale(1.1, 1.1);
 }
 
 .footer__text {
@@ -619,14 +641,25 @@ button {
 .footer__location p{
     color: var(--white);
     margin-top: 5px;
+    margin-left: 15%;
     font-weight: 300;
     font-size: 14px;
 }
 
 .icon__location {
-    position: absolute;
-    transform: translateX(-30px);
+    display: flex;
+    float: left;
+    margin-right: 2px;
 } 
+
+.icon__location img {
+    height: 30px;
+}
+
+.icon__location:hover {
+    transition: 0.5s ease-out;   
+    transform: scale(1.1, 1.1);
+}
 
 
 /* Whatsapp */
@@ -647,8 +680,7 @@ button {
 }
 .float:hover {
 	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
+    background-color: #383a3ab6;
 }
 
 .my-float{
@@ -659,6 +691,21 @@ button {
     padding-top: 5px;
     width: 32px;
     height: 32px;
+}
+
+@media (min-width:400px) {
+
+    .about__title {
+        padding-top: 20%;
+    }
+}
+
+@media (min-width:520px) {
+
+    .about__card img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media (min-width:768px){
@@ -697,6 +744,12 @@ button {
 .main__list {
     font-size: 22px;
     font-weight: 200;
+    transition: 0.2s ease-out;
+}
+
+.main__list:hover {
+    transition: all 0.2s ease-out;
+    transform: scale(1.03, 1.03);
 }
 
 .main__link{
@@ -766,6 +819,17 @@ button {
     gap: 1em;
 }
 
+/* about */
+
+.about__card img {
+    width: 300px;
+    height: 300px;
+}
+
+.about__title {
+    padding-top: 17%;
+}
+
 /* Contact */
 
 .contact {
@@ -796,11 +860,6 @@ form, .contact__title, button {
     margin-top: 0px;
 }
 
-.icon__location {
-    position: absolute;
-    transform: translateX(240px);
-} 
-
 .footer__social__icons {
     margin-left: 6px;
 }
@@ -822,45 +881,91 @@ form, .contact__title, button {
 
 @media (min-width: 1024px) {
 
-    /* Galery works */
-    
-    .works{
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1em;
-    }
+/* Galery works */
+
+.works{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+/* about */
+
+.about__card img {
+    width: 350px;
+    height: 350px;
+}
+
 }
 
 @media (min-width: 1080px) {
 
-    /* Galery works */
     
-    .works{
-        display:grid;
-        grid-template-columns: 1fr 1fr 3fr;
-        grid-template-rows: 250px 280px 280px 300px;
-        gap: 1em;
-    }
+/* Galery works */
+    
+.works{
+    display:grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 250px 280px 280px 300px;
+    gap: 1em;
+}
 
-    /* Abouts */
+/* Abouts */
 
-    /* Contact */
+.abouts {
+    grid-area: abouts;
+    width: 50%;
+}
 
-   
+/* about */
+
+.about__card img {
+    width: 280px;
+    height: 280px;
+}
+
+.about__title {
+    padding-top: 22%;
+}
+
+/* Contact */
+
+.contact {
+    grid-area: abouts;
+    width: 50%;
+    margin-left: 50%;
+}
+
+form {
+    height: 80%;
+    width: 60%;
+}
     
 
 }
 
 @media (min-width: 1366px) {
 
-    /* Galery works */
+/* Galery works */
     
-    .works{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 300px;
-        gap: 1em;
-    }
+.works{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    gap: 1em;
+}
+
+/* about */
+
+.about__title {
+    padding-top: 17%;
+}
+}
+
+@media (min-width: 1900px) {
+.about__title {
+    padding-top: 14%;
+}
 }
 
  
