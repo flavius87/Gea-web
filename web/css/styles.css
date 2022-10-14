@@ -270,7 +270,9 @@ body{
 
 .works{
     grid-area: works;
-    width: 95%;
+    width: 100%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     display:grid;
     justify-content: space-around;
     border-radius:3px;
@@ -282,11 +284,13 @@ body{
     min-height: 250px;
     margin-bottom:5px;
     box-shadow: var(--gray-tr);
+    overflow: hidden;
 }
 
 .work__galery img{
     width: 100%;
     height:100%;
+    transition: .8s ease-in-out;
     object-fit: cover;
 }
 
@@ -298,7 +302,7 @@ body{
     width: 100%;
     height: 0;
     overflow: hidden;
-    transition: .5s ease;
+    transition: .5s ease-in-out;
 }
 
 .work__title{
@@ -310,6 +314,11 @@ body{
     left:50%;
     text-align: center;
     transform: translate(-50%, -50%);
+}
+
+.work__galery img:hover {
+    transition: .5s ease-in-out;
+    transform: scale(1.2, 1.2);
 }
 
 .work__galery:hover .work__overlay{
@@ -470,7 +479,7 @@ input, textarea {
 
 input:focus, textarea:focus{
     outline: none;
-    color: rgb(94,93,93);
+    color: var(--gray);
 }
 
 label {
@@ -500,6 +509,7 @@ textarea:focus~label, textarea:valid~label{
 input:focus~.float__bar::before,
 textarea:focus~.float__bar::before{
     width: 100%;
+    color: var(--gray);
 }
 
 .float__bar::before {
@@ -531,6 +541,19 @@ button {
 button:hover {
     transition: all 0.5s ease-out;
     transform: scale(1.1, 1.1);
+}
+
+.contact__form small {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+}
+
+.contact__form.fail small {
+    visibility: visible;
+    color:#e74c3c;
 }
 
 /* Logos */
@@ -813,10 +836,12 @@ button:hover {
 /* Galery works */
 
 .works{
-    width: 95%;
+    width: 100%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1em;
+    gap: 0.5em;
 }
 
 /* about */
@@ -849,10 +874,12 @@ form, .contact__title, button {
 
 .footer, .footer__location, .footer__social {
     width: 100%;
+    height: 15%;
+    margin: 4px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
 }
 
 .footer__location p {
@@ -862,6 +889,10 @@ form, .contact__title, button {
 
 .footer__social__icons {
     margin-left: 6px;
+}
+
+.icon__location img {
+    height: 25px;
 }
 
 /* Whatsapp */
@@ -886,7 +917,6 @@ form, .contact__title, button {
 .works{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
 }
 
 /* about */
@@ -907,7 +937,6 @@ form, .contact__title, button {
     display:grid;
     grid-template-columns: 1fr 1fr 3fr;
     grid-template-rows: 250px 280px 280px 300px;
-    gap: 1em;
 }
 
 /* Abouts */
@@ -915,9 +944,9 @@ form, .contact__title, button {
 .abouts {
     grid-area: abouts;
     width: 50%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
-
-/* about */
 
 .about__card img {
     width: 280px;
@@ -932,8 +961,9 @@ form, .contact__title, button {
 
 .contact {
     grid-area: abouts;
-    width: 50%;
-    margin-left: 50%;
+    width: 49%;
+    margin-left: 51%;
+    margin-right: 0.5em;
 }
 
 form {
@@ -952,7 +982,6 @@ form {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 300px;
-    gap: 1em;
 }
 
 /* about */

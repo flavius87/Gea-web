@@ -1,6 +1,8 @@
 <?php
  
 if($_POST) {
+    $addressee = 'mailto@email.com';
+
     $name = "";
     $lastName = "";
     $email = "";
@@ -42,7 +44,7 @@ if($_POST) {
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $email . "\r\n";
      
-    if(mail($recipient, $subject, $message, $headers)) {
+    if(mail($addressee, $subject, $message, $headers)) {
         echo "<p>Gracias por comunicarte, $name. En breve recibirás una respuesta a tu consulta.</p>";
     } else {
         echo '<p>Tu mail no pudo ser enviado</p>';

@@ -8,6 +8,9 @@
     <title>GEA Arquitectura</title>
     <link rel="shortcut icon" href="/web/assets/icons/gea.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-40RLKWS9P5"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-40RLKWS9P5');</script>
 </head>
 
 <body>
@@ -40,6 +43,8 @@
                 </a>
             </nav>
         </header>
+
+        <!----- Slide ----->
         <section class="slide">
             <div class="mySlider fade">
                 <img src="assets/images/desktop-image-hero-1.png" alt="image1">
@@ -61,6 +66,8 @@
                 <a href="#" class="next" onclick="fade(1)"><img src="assets/icons/right.svg" class="main__control"></a>
             </div>
         </section>
+
+        <!----- Servicios ----->
         <section class="services container" id="services">
             <div class="service">
                 <figure class="service__img">
@@ -111,6 +118,7 @@
             </div>
         </section>
 
+        <!----- Obras ----->
         <section class="works container" id="works">
             <div class="work__galery">
                 <img src="assets/images/galery/image1.jpeg" alt="galery">
@@ -131,9 +139,9 @@
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image4.jpg" alt="galery">
+                <img src="assets/images/galery/image13.jpg" alt="galery">
                 <div class="work__overlay">
-                    <h4 class="work__title">Ampliación en Wood Frame</h4>
+                    <h4 class="work__title">Local comercial en Av. 13</h4>
                 </div>
             </div>
             <div class="work__galery">
@@ -167,9 +175,9 @@
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image10.jpeg" alt="galery">
+                <img src="assets/images/galery/image15.jpg" alt="galery">
                 <div class="work__overlay">
-                    <h4 class="work__title">Interior en Wood Frame</h4>
+                    <h4 class="work__title">Reforma de local comercial en Palermo</h4>
                 </div>
             </div>
             <div class="work__galery">
@@ -179,13 +187,14 @@
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image12.jpg" alt="galery">
+                <img src="assets/images/galery/image14.JPG" alt="galery">
                 <div class="work__overlay">
-                    <h4 class="work__title">Baño en Wood Frame</h4>
+                    <h4 class="work__title">Local comercial Osaki en calle 47</h4>
                 </div>
             </div>
         </section>
 
+        <!----- Sobre nosotros ----->
         <section class="abouts" id="abouts">
             <div class="about">
                 <!--<div class="card__wave"><img src="assets/waves/wave-card.svg"></div>
@@ -239,41 +248,50 @@
             </div>
         </section>
 
+        <!----- Contacto ----->
         <section class="contact container" id="contact">
-            <form action="contact.php" method="post">
+            <form action="contact.php" method="POST" id="myForm" novalidate>
                 <h1 class="contact__title">Dejanos tu consulta</h1>
                 <div class="contact__form">
-                    <input type="text" name="name" id="name" pattern=[A-Z\sa-z]{3,20} required><span class="float__bar"></span>
+                    <small></small>
+                    <input type="text" name="name" id="name" style="color:hsl(345, 6%, 13%)" pattern=[A-Z\sa-z]{3,20} required><span class="float__bar"></span>
                     <label>Nombre</label>
                 </div>
                 <div class="contact__form">
-                    <input type="text" name="lastName" id="lastName" pattern=[A-Z\sa-z]{3,20} required><span class="float__bar"></span>
+                    <small></small>
+                    <input type="text" name="lastName" id="lastName" style="color:hsl(345, 6%, 13%)" pattern=[A-Z\sa-z]{3,20} required><span class="float__bar"></span>
                     <label>Apellido</label>
                 </div>
                 <div class="contact__form">
-                    <input type="email" name="email" id="email" required><span class="float__bar"></span>
+                    <small></small>
+                    <input type="email" name="email" id="email" style="color:hsl(345, 6%, 13%)" required><span class="float__bar"></span>
                     <label>Email</label>
                 </div>
                 <div class="contact__form">
-                    <input type="number" name="phone" id="cellphone" required><span class="float__bar"></span>
+                    <small></small>
+                    <input type="number" name="phone" id="cellphone" style="color:hsl(345, 6%, 13%)" required><span class="float__bar"></span>
                     <label>Celular</label>
                 </div>
                 <div class="contact__form">
-                    <input type="text" name="city" id="city" required><span class="float__bar"></span>
+                    <small></small>
+                    <input type="text" name="city" id="city" style="color:hsl(345, 6%, 13%)" required><span class="float__bar"></span>
                     <label>Tu ciudad</label>
                 </div>
                 <div class="contact__form">
-                    <input type="text" name="subject" id="subject" required><span class="float__bar"></span>
+                    <small></small>
+                    <input type="text" name="subject" id="subject" style="color:hsl(345, 6%, 13%)" required><span class="float__bar"></span>
                     <label>Asunto</label>
                 </div>
                 <div class="contact__form">
-                    <textarea name="message" id="message" rows="3" cols="25" required></textarea><span class="float__bar"></span>
+                    <small></small>
+                    <textarea name="message" id="message" rows="3" cols="25" style="color:hsl(345, 6%, 13%)" required></textarea><span class="float__bar"></span>
                     <label>Mensaje</label>
                 </div>
-                <button type="submit">Enviar</button>
+                <button type="submit"  style="color:whitesmoke">Enviar</button>
             </form>
         </section>
 
+        <!----- Logos ----->
         <section class="logos container">
             <h2 class="logos__title">Acompañan nuestros proyectos:</h2>
             <div class="logos__img">
@@ -307,6 +325,8 @@
                 <img src="/web/assets/icons/whatsapp.svg" alt="whatsapp">
             </a>
         </div>
+
+        <!----- Footer ----->
         <footer>
             <section class="footer container">
                 <div class="footer__location">
@@ -338,6 +358,7 @@
     </main>
     <script src="/web/js/slide.js"></script>
     <script src="/web/js/sticky.js"></script>
+    <script src="/web/js/form.js"></script>
 </body>
 
 </html>
