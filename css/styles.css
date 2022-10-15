@@ -136,6 +136,11 @@ body{
     border-radius: 6px;
 }
 
+.congrats__text {
+    color: var(--gray);
+    text-align: center;
+    font-weight: 300;
+}
 
 /* sticky */
 

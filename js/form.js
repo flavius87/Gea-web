@@ -20,7 +20,7 @@ window.addEventListener('load', ()=> {
         const cellphoneValue = cellphone.value.trim()
         const cityValue = city.value.trim()
         const subjectValue = subject.value.trim()
-        const messageValue = message.value.trim()
+        const messageValue = message.value.trim();
 
         if(!nameValue){
             validateFail(name, 'Ingresa tu nombre')
@@ -70,7 +70,7 @@ window.addEventListener('load', ()=> {
     const validateFail = (input, msje) => {
         const formControl = input.parentElement
         const advise = formControl.querySelector('small')
-        advise.innerHTML = msje
+        advise.innerText = msje
 
         formControl.className = 'contact__form fail'
     }
