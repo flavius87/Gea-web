@@ -37,23 +37,32 @@
                             <img src="/assets/icons/gmail-gray.svg" alt="gmail"></a>
                     </div>
                 </ul>
-                <a href="#myNav" class="nav__hamburguer"><img src="assets/icons/menu.svg" class="nav__icon">
+                <a href="#myNav" class="nav__hamburguer"><img src="assets/icons/menu.svg" class="nav__icon" alt="icono de menú">
                 </a>
                 <a href="#" class="nav__close"><img src="/assets/icons/close.svg" class="nav__icon" alt="close">
                 </a>
             </nav>
         </header>
 
-        <!----- Slide ----->
+        <!-- Slide -->
         <section class="slide">
             <div class="mySlider fade">
-                <img src="assets/images/desktop-image-hero-1.png" alt="image1">
+                <picture>
+                    <source srcset="assets/images/casa-en-ostende.webp" type="image/webp">
+                    <img src="assets/images/casa-en-ostende.jpg" alt="Diseño de arquitecto de casa en Ostende" loading="lazy">
+                </picture>
             </div>
             <div class="mySlider fade">
-                <img src="assets/images/desktop-image-hero-2.png" alt="image2">
+                <picture>
+                    <source srcset="assets/images/restaurante-osaki-sushi.webp" type="image/webp">
+                    <img src="assets/images/restaurante-osaki-sushi.jpg" alt="Diseño restaurante osaki sushi, calle 47" loading="lazy">
+                </picture>
             </div>
             <div class="mySlider fade">
-                <img src="assets/images/desktop-image-hero-3.png" alt="image3">
+                <picture>
+                    <source srcset="assets/images/diseño-interiores-restaurante.webp" type="image/webp">
+                    <img src="assets/images/diseño-interiores-restaurante.jpg" alt="Diseño de interiores de Osaki sushi" loading="lazy">
+                </picture>
             </div>
             <div class="bars">
                 <span class="bar active" onclick="positionSlider(1)"></span>
@@ -67,7 +76,7 @@
             </div>
         </section>
 
-        <!----- Servicios ----->
+        <!-- Servicios -->
         <section class="services container" id="services">
             <div class="service">
                 <figure class="service__img">
@@ -80,7 +89,7 @@
             </div>
             <div class="service">
                 <figure class="service__img">
-                    <img src="assets/icons/house.svg" alt="house">
+                    <img src="assets/icons/house.svg" alt="Casas a medida">
                 </figure>
                 <h4 class="service__title">Proyectamos</h4>
                 <p class="service__paragraph">Le damos forma a tus ideas y las transformamos en un proyecto
@@ -89,7 +98,7 @@
             </div>
             <div class="service">
                 <figure class="service__img">
-                    <img src="assets/icons/calculator.svg" alt="calcu">
+                    <img src="assets/icons/calculator.svg" alt="Calculadora de presupuesto">
                 </figure>
                 <h4 class="service__title">Presupuestamos</h4>
                 <p class="service__paragraph">Realizamos una propuesta económica clara, que cubra todas las necesidades
@@ -98,7 +107,7 @@
             </div>
             <div class="service">
                 <figure class="service__img">
-                    <img src="assets/icons/work.svg" alt="work">
+                    <img src="assets/icons/work.svg" alt="Casco de constructor">
                 </figure>
                 <h4 class="service__title">Construimos</h4>
                 <p class="service__paragraph">Llevamos a cabo el proyecto siguiendo tu decisión y de acuerdo con todos
@@ -108,7 +117,7 @@
             </div>
             <div class="service">
                 <figure class="service__img">
-                    <img src="assets/icons/key.svg" alt="key">
+                    <img src="assets/icons/key.svg" alt="Entregas llave en mano">
                 </figure>
                 <h4 class="service__title">Entregamos</h4>
                 <p class="service__paragraph">Te ofrecemos un modelo de construcción integral "llave en mano",
@@ -118,89 +127,127 @@
             </div>
         </section>
 
-        <!----- Obras ----->
+        <!-- Obras -->
         <section class="works container" id="works">
             <div class="work__galery">
-                <img src="assets/images/galery/image1.jpeg" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/frente-de-casa-revestida-en-madera.webp" type="image/webp">
+                    <img src="assets/images/galery/frente-de-casa-revestida-en-madera.jpeg" loading="lazy" alt="Frente de casa revestida en madera">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Construcción tradicional</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image2.png" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/casa-numero-iluminado.webp" type="image/webp">
+                    <img src="assets/images/galery/casa-numero-iluminado.jpg" loading="lazy" alt="Frente de casa con número iluminado">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Construcción tradicional</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image3.jpeg" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/construccion-piscina.webp" type="image/webp">
+                    <img src="assets/images/galery/construccion-piscina.jpeg" loading="lazy" alt="Piscina en casa de fin de semana">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Piscina</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image13.jpg" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/arquitectura-interiores-restaurante.webp" type="image/webp">
+                    <img src="assets/images/galery/arquitectura-interiores-restaurante.jpg" loading="lazy" alt="Arquitectura de interiores en restaurante i love sushi de La Plata">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Local comercial en Av. 13</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image5.jpeg" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/diseño-interiores-wood-frame.webp" type="image/webp">
+                    <img src="assets/images/galery/diseño-interiores-wood-frame.jpeg" loading="lazy" alt="Pasillo en segundo piso construido en wood frame en Melchor Romero">
+                </picture>
+                
                 <div class="work__overlay">
                     <h4 class="work__title">Interior Wood Frame</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image6.jpeg" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/baño-moderno-wood-frame.webp" type="image/webp">
+                    <img src="assets/images/galery/baño-moderno-wood-frame.jpeg" loading="lazy" alt="Baño en segundo piso construido en wood frame en Melchor Romero">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Baño en Wood Frame</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image7.jpeg" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/habitacion-piso-flotante.webp" type="image/webp">
+                    <img src="assets/images/galery/habitacion-piso-flotante.jpeg" loading="lazy" alt="Habitación en segundo piso construida en wood frame en Melchor Romero">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Habitación en Wood Frame</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image8.png" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/casa-propia-procrear.webp" type="image/webp">
+                    <img src="assets/images/galery/casa-propia-procrear.jpg" loading="lazy" alt="Casa construida en sistema wood frame con crédito Procrear">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Construcción en Wood Frame</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image9.jpeg" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/baño-construccion-city-bell.webp" type="image/webp">
+                    <img src="assets/images/galery/baño-construccion-city-bell.jpeg" loading="lazy" alt="Baño de casa de City Bell construida en wood frame">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Baño en Wood Frame</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image15.jpg" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/diseño-local-reformado-sushi.webp" type="image/webp">
+                    <img src="assets/images/galery/diseño-local-reformado-sushi.jpg" loading="lazy" alt="Reforma integral en restaurante de shushi en Palermo">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Reforma de local comercial en Palermo</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image11.jpeg" alt="galery">
+                <picture>
+                    <source srcset="assets/images/galery/construccion-procrear-sicardi-cocina.webp" type="image/webp">
+                    <img src="assets/images/galery/construccion-procrear-sicardi-cocina.jpeg" loading="lazy" alt="Mesada de cocina construcción en Sicardi">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Cocina en Wood Frame</h4>
                 </div>
             </div>
             <div class="work__galery">
-                <img src="assets/images/galery/image14.JPG" alt="galery">
+                <picture>
+                    <source src="assets/images/galery/arquitectura-restaurante-sushi-la-plata.webp" type="image/webp">
+                    <img src="assets/images/galery/arquitectura-restaurante-sushi-la-plata.JPG" loading="lazy" alt="Diseño de arquitecto para restaurante de sushi en La Plata">
+                </picture>
                 <div class="work__overlay">
                     <h4 class="work__title">Local comercial Osaki en calle 47</h4>
                 </div>
             </div>
         </section>
 
-        <!----- Sobre nosotros ----->
+        <!-- Sobre nosotros -->
         <section class="abouts" id="abouts">
             <div class="about">
-                <!--<div class="card__wave"><img src="assets/waves/wave-card.svg"></div>
-            <div class="card__wave__2"><img src="assets/waves/wave-card-2.svg"></div>-->
                 <div class="about__card">
-                    <img src="assets/images/ayelen-giles.png" alt="aye-gea">
+                    <picture>
+                        <source src="assets/images/ayelen-giles-arquitecta-city-bell.webp" type="image/webp">
+                        <img src="assets/images/ayelen-giles-arquitecta-city-bell.jpg" loading="lazy" alt="Ayelén Giles, Arquitecta Directora del Estudio GEA">
+                    </picture>
                 </div>
 
                 <h2 class="about__title">Ayelén Giles</h2>
@@ -241,15 +288,15 @@
                         </p>
                     </div>
                     <div class="procrear">
-                        <img src="/assets/logos/procrearLogo.png" alt="Procrear">
+                        <img src="/assets/logos/procrearLogo.png" loading="lazy" alt="Procrear Logo">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!----- Contacto ----->
+        <!-- Contacto -->
         <section class="contact container" id="contact">
-            <form action="contact.php" method="POST" id="myForm" novalidate>
+            <form action="contact.php" method="POST" id="myForm">
                 <h1 class="contact__title">Dejanos tu consulta</h1>
                 <div class="contact__form">
                     <small></small>
@@ -290,47 +337,52 @@
             </form>
         </section>
 
-        <!----- Logos ----->
+        <!-- Logos -->
         <section class="logos container">
             <h2 class="logos__title">Acompañan nuestros proyectos:</h2>
             <div class="logos__img">
                 <div class="logo move">
                     <a href="http://www.mussispropiedades.com.ar/" target="_blank">
-                        <img src="/assets/logos/mussisLogo.png" alt="mussisLogo">
+                        <img src="/assets/logos/mussisLogo.png" loading="lazy" alt="Mussis Logo">
                     </a>
                 </div>
                 <div class="logo move">
                     <a href="https://miksa.com.ar/" target="_blank">
-                        <img src="/assets/logos/miksaLogo.png" alt="miksaLogo">
+                        <img src="/assets/logos/miksaLogo.png" loading="lazy" alt="Miksa Logo">
                     </a>
                 </div>
                 <div class="logo move">
                     <a href="https://molber-steelframe.com/" target="_blank">
-                        <img src="/assets/logos/molberLogo.png" alt="molberLogo">
+                        <img src="/assets/logos/molberLogo.png" loading="lazy" alt="Molber Logo">
                     </a>
                 </div>
                 <div class="logo move">
                     <a href="https://www.facebook.com/materialesberisso/" target="_blank">
-                        <img src="/assets/logos/mbLogo.png" alt="mbLogo">
+                        <img src="/assets/logos/mbLogo.png" loading="lazy" alt="Materiales Berisso Logo">
+                    </a>
+                </div>
+                <div class="logo move">
+                    <a href="https://linktr.ee/whatsapp.info" target="_blank">
+                        <img src="/assets/logos/elgrilloLogo.png" loading="lazy" alt="Ferretería de La Plata El Grillo Logo">
                     </a>
                 </div>
             </div>
         </section>
 
-        <!----- Whatsapp ----->
+        <!-- Whatsapp -->
         <div class="whatsapp container">
             <a href="https://api.whatsapp.com/send?phone=5492214591846&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n"
                 class="float" target="_blank">
-                <img src="/assets/icons/whatsapp.svg" alt="whatsapp">
+                <img src="/assets/icons/whatsapp.svg" alt="icono de whatsapp">
             </a>
         </div>
 
-        <!----- Footer ----->
+        <!-- Footer -->
         <footer>
             <section class="footer container">
                 <div class="footer__location">
                     <div class="icon__location">
-                        <a href="https://goo.gl/maps/d2BabPJxYzqGNsXZ8" target="_blank"><img src="/assets/icons/maps.svg" alt="map"></a>
+                        <a href="https://goo.gl/maps/d2BabPJxYzqGNsXZ8" target="_blank"><img src="/assets/icons/maps.svg" alt="icono de ubicación"></a>
                     </div>
                     <h3 class="footer__social__title">Dirección de nuestro estudio:</h3>
                     <p>City Bell, Calle 476 esquina 19</p>
@@ -357,7 +409,7 @@
     </main>
     <script src="/js/slide.js"></script>
     <script src="/js/sticky.js"></script>
-    <script src="/js/form.js"></script>
+    <!-- <script src="/js/form.js"></script> -->
 </body>
 
 </html>

@@ -351,19 +351,7 @@ body{
     border: 4px solid var(--white);
     object-fit: cover;
     transform: translateY(40%);
-    /*box-shadow: 3px 2px 0px 0px var(--gray-tr);*/
 }
-
-/*.card__wave {
-    position: absolute;
-    width: 100%;
-    transform: translateY(45%);
-}
-
-.card__wave__2 {
-    position: absolute;
-    width: 100%;
-}*/
 
 .about__title {
     padding-top: 25%;
@@ -583,10 +571,10 @@ button:hover {
 }
 
 .logos__img {
-    margin: 2px auto;
+    margin: 2px;
     animation: move 40s linear infinite;
     display: flex;
-    width: calc(250px * 4);
+    width: calc(250px * 5);
 }
 
 .logos__img .logo {
@@ -603,7 +591,7 @@ button:hover {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px*2));
+        transform: translateX(calc(-250px*3));
     }
 }
 
@@ -874,6 +862,22 @@ form, .contact__title, button {
     align-items: center;
 }
 
+/* Logos */
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px*5));
+    }
+    0% {
+        transform: translateX(calc(250px*5));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 /* Footer */
 
@@ -975,8 +979,6 @@ form {
     height: 80%;
     width: 60%;
 }
-    
-
 }
 
 @media (min-width: 1366px) {
